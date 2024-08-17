@@ -14,10 +14,6 @@ def shutdown_server():
 
 myapp = Flask(__name__)
 
-# Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: MIT-0
-
-
 @myapp.route('/shutdown', methods=['POST'])
 def shutdown():
     shutdown_server()
