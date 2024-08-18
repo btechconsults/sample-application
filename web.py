@@ -14,7 +14,6 @@ def shutdown_server():
 
 myapp = Flask(__name__)
 
-
 @myapp.route('/shutdown', methods=['POST'])
 def shutdown():
     shutdown_server()
